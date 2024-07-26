@@ -15,8 +15,6 @@ public class GuessTheMovieGame {
         Random random = new Random();
         String guessTheMovie = movies.get(random.nextInt(movies.size() - 1));
         playGame(guessTheMovie);
-
-
     }
 
     /**
@@ -50,9 +48,7 @@ public class GuessTheMovieGame {
      * проверяем, не отгадал ли пользователь всё слово
      * если угадал то завершаем цикл и поздравляем
      * если не угадал уменьшаем значение попыток и начинаем новый цикл
-     *
-     * @param movie
-     * @return
+
      */
     static void playGame(String movie) {
         Scanner scanner = new Scanner(System.in);
